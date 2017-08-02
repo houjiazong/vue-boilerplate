@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard"
+  ],
+  "plugins": [
+    "babel",
+    "import",
+    "node",
+    "promise",
+    "html"
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__PROD__": false
+  }
+}

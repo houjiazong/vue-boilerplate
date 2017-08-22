@@ -1,0 +1,59 @@
+:global {
+  .router-fade-enter-active, .router-fade-leave-active {
+	   transition: opacity .3s;
+	}
+	.router-fade-enter, .router-fade-leave-active {
+	   opacity: 0;
+	}
+
+  .has-tabbar-wrap {
+    height: 100vh;
+    .has-tabbar-wrap-content {
+      height: 100%;
+      padding-bottom: 50px;
+      .mint-loadmore {
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+    .has-tabbar-wrap-tabbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      display: flex;
+      background-color: #fff;
+      border-top: 1px solid #e9e9e9;
+      color: #949494;
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        font-size: 12px;
+        .iconfont {
+          font-size: 20px;
+        }
+        &.active {
+          background-color: #f07682;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // mint-ui
+  .mint-loadmore-top span {
+    display: inline-block;
+    vertical-align: middle;
+    transition: .2s linear;
+    &.is-rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

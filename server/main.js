@@ -34,9 +34,6 @@ if (project.env === 'development') {
 
   app.use('/api', proxy({
     target: project.proxy_target,
-    pathRewrite: {
-      '^/api': ''
-    },
     changeOrigin: true
   }))
 

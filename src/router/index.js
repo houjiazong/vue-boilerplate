@@ -4,9 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // route-level code splitting
-const GroupMain = () => import('../views/group/Main.vue')
-const DiscoverMain = () => import('../views/discover/Main.vue')
-const MeMain = () => import('../views/me/Main.vue')
+const Top = () => import('../views/top/Main.vue')
+const New = () => import('../views/new/Main.vue')
+const Me = () => import('../views/me/Main.vue')
 
 export default () => {
   return new Router({
@@ -14,19 +14,19 @@ export default () => {
     routes: [
       {
         path: '/',
-        redirect: '/group'
+        redirect: '/top'
       },
       {
-        path: '/group',
-        component: GroupMain
+        path: '/top',
+        component: Top
       },
       {
-        path: '/discover',
-        component: DiscoverMain
+        path: '/new',
+        component: New
       },
       {
         path: '/me',
-        component: MeMain
+        component: Me
       }
     ]
   })

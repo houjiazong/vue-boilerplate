@@ -1,9 +1,9 @@
 <template>
   <div class="has-tabbar-wrap">
     <div class="has-tabbar-wrap-content">
-      <div style="padding: 20px; text-align: center;">Me Page</div>
+      <div style="padding: 20px; text-align: center;">New Page</div>
     </div>
-    <tabbar selected='me' class="has-tabbar-wrap-tabbar" />
+    <tabbar selected='new' class="has-tabbar-wrap-tabbar" />
   </div>
 </template>
 

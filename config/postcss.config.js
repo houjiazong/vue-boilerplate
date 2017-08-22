@@ -6,5 +6,9 @@ module.exports = [
       'Firefox ESR',
       'not ie < 9'
     ]
+  }),
+  require('postcss-pxtorem')({
+    rootValue: 16,
+    propWhiteList: []
   })
 ]
